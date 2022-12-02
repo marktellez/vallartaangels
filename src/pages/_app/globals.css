@@ -3,9 +3,17 @@
 @tailwind utilities;
 
 body {
-  @apply text-white bg-gray-900;
+  @apply text-white bg-blue-600;
 }
 
 h1 {
-  @apply text-5xl prose-2xl prose-invert;
+  @apply text-5xl prose-2xl prose-invert font-black;
+}
+
+h2 {
+  @apply text-3xl prose-xl prose-invert font-bold;
+}
+
+h3 {
+  @apply text-xl prose-invert font-semibold;
 }
