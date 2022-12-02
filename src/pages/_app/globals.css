@@ -17,3 +17,7 @@ h2 {
 h3 {
   @apply text-xl prose-invert font-semibold;
 }
+
+a {
+  @apply hover:text-black underline;
+}

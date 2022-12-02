@@ -1,3 +1,5 @@
+import Donations from "@/features/donations";
+
 export default function Homepage() {
   return (
     <div className="sm:mt-8 w-full sm:w-1/2 mx-auto flex flex-col items-center text-center gap-8">
@@ -47,35 +49,7 @@ export default function Homepage() {
         </div>
 
         <div className="flex flex-col sm:flex-row gap-5 flex-wrap justify-center w-full">
-          <div className="flex flex-col justify-center items-center p-3 ">
-            <img
-              src="/qr-otd.png"
-              alt="One time donation"
-              className="w-full p-8 sm:p-0 sm:w-[120px] sm:h-[120px]"
-            />
-
-            <a
-              className="text-lg"
-              href="https://buy.stripe.com/dR66rY7Qy9lp240eUY">
-              One time Angel
-            </a>
-          </div>
-          <div className="flex flex-col justify-center items-center p-3 ">
-            <div>
-              <img
-                src="/qr-md.png"
-                alt="Monthly support"
-                className="w-full p-8 sm:p-0 sm:w-[120px] sm:h-[120px]"
-              />
-            </div>
-            <div>
-              <a
-                className="text-lg"
-                href="https://buy.stripe.com/fZe17Ec6O4156kg002">
-                Monthly Angel
-              </a>
-            </div>
-          </div>
+          <Donations />
         </div>
       </div>
     </div>
