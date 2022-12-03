@@ -21,7 +21,11 @@ export default function Homepage() {
           Need help in <span className="italic">English</span> while in
           Vallarta?
         </h2>
-        <p className="text-5xl">(322) 192-9824</p>
+        <p className="text-5xl">
+          <a href="tel:+523221929824" className="no-underline hover:text-white">
+            +52 (322) 192-9824
+          </a>
+        </p>
       </div>
 
       <div className="border p-8 flex flex-col gap-6">
