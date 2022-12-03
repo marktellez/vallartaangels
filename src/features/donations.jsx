@@ -1,7 +1,7 @@
 export default function Donations({}) {
   return (
     <>
-      <div className="flex flex-col justify-center items-center p-3 transition-all duration-500  hover:bg-white  hover:text-blue-500 ">
+      <div className="flex flex-col justify-center items-center p-3 transition-all duration-500  hover:bg-white  hover:text-blue-500 rounded">
         <img
           src="/qr-otd.png"
           alt="One time donation"
@@ -12,7 +12,7 @@ export default function Donations({}) {
           One time Angel
         </a>
       </div>
-      <div className="flex flex-col justify-center items-center p-3 transition-all duration-500  hover:bg-white  hover:text-blue-500 ">
+      <div className="flex flex-col justify-center items-center p-3 transition-all duration-500  hover:bg-white  hover:text-blue-500 rounded">
         <div>
           <img
             src="/qr-md.png"
@@ -23,7 +23,8 @@ export default function Donations({}) {
         <div>
           <a
             className="text-lg"
-            href="https://buy.stripe.com/fZe17Ec6O4156kg002">
+            href="https://buy.stripe.com/fZe17Ec6O4156kg002"
+          >
             Monthly Angel
           </a>
         </div>
