@@ -2,35 +2,46 @@ import Donations from "@/features/donations";
 
 export default function Homepage() {
   return (
-    <div className="sm:mt-8 w-full sm:w-1/2 mx-auto flex flex-col items-center text-center gap-8">
-      <h1>The Vallarta Angels Mission</h1>
-
-      <p>
-        We are a growing volunteer organization dedicated to assisting our
-        English speaking visitors feel safe, welcomed, and protected while they
-        are guests in our beautiful little city. You will find us in blue hats
-        around town and on the Malecon.
-      </p>
-
-      <div>
-        <img src="/logo.png" alt="Vallarta Angels" className="w-[300px]" />
-      </div>
-
+    <>
       <div className="flex flex-col gap-8">
         <h2 className="uppercase text-5xl">Did we help you?</h2>
         <div>
-          <p>
-            Your donations are the only thing that keeps the power on and our
-            blue hats on the Malecon helping beautiful people like YOU! While we
-            are registered with the Mexican board of tourism,
-            <em>we recieve no money</em> from anyone in our Government.
-          </p>
+          <blockquote className="p-4 border my-8 rounded-sm bg-blue-700">
+            <p>
+              Our volunteers who wear the blue hats on the Malecon are High
+              School and College kids that live and study in Vallarta and they
+              are working on speaking english in the you do, and how to
+              communicate with non-mexican English speakers.
+            </p>
+            <p>
+              Our program is being modeled after the old Boy/Girl scout programs
+              of the 50s and 60s.
+            </p>
+          </blockquote>
+
+          <h2>
+            <span className="italic font-black text-blue-800">
+              If you are like us
+            </span>
+            , and feel that need to give something and{" "}
+            <span className="italic font-black text-blue-800">
+              make the world a better place
+            </span>
+            , please consider donating to our organization.
+          </h2>
         </div>
 
         <div className="flex flex-col sm:flex-row gap-5 flex-wrap justify-center w-full">
           <Donations />
         </div>
+
+        <div className="flex flex-col sm:flex-row gap-5 flex-wrap justify-center w-full">
+          <p>
+            We are also building a stripe direct api call to show your donations
+            here with a thank you for being an Angel!
+          </p>
+        </div>
       </div>
-    </div>
+    </>
   );
 }

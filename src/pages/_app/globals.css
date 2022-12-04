@@ -11,7 +11,7 @@ h1 {
 }
 
 h2 {
-  @apply text-3xl prose-xl prose-invert font-bold;
+  @apply text-3xl prose-xl prose-invert font-semibold;
 }
 
 h3 {
@@ -20,4 +20,8 @@ h3 {
 
 a {
   @apply hover:text-black underline;
+}
+
+p {
+  @apply my-3;
 }
